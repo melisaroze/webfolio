@@ -28,6 +28,7 @@ nav a {
 
 #landing {
 background:	#00030e;
+align-content: center;
 }
 
 .hover-text-warning:hover {
@@ -41,7 +42,9 @@ background:	#00030e;
 }
 
 #my-picture {
-	width: auto;
+	width: 100%;
+	max-width: 500px;
+	height: auto;
 }
 
 
@@ -98,11 +101,6 @@ background:	#00030e;
   transform: scale(1.03);
   transition: transform 0.3s ease;
 }
-
-#cta:hover {
-  background-color: #ffb733;
-}
-
 
 
 #tools {
@@ -309,10 +307,10 @@ textarea::placeholder {
 
 
 #button:hover {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   color: #00030e;
-  border-color: #ffffff;
-  box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff40;
+  border-color: #FFFFFF;
+  box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF 40;
 }
 
 
@@ -327,8 +325,6 @@ footer {
 	border-top: 1px solid white;
 }
 
-
-/*TRIAL*/
 
 #about {
 	background: #00030e;
@@ -356,6 +352,7 @@ footer {
   position: relative;
   margin-bottom: 40px;
   padding-left: 30px;
+  gap: 8px;
   z-index: 1;
 }
 
@@ -387,4 +384,44 @@ footer {
   top: 0;
   right: 0;
   color: #FFFFFF;
+  margin-top: -8px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .timeline {
+    padding-left: 16px;
+  }
+
+  .timeline::before {
+    left: 8px;
+    height: 100%;
+  }
+
+  .timeline-item {
+    padding-left: 20px;
+    margin-bottom: 24px;
+  }
+
+  .timeline-dot {
+    left: -16px;
+  }
+
+  .timeline-content h5 {
+    font-size: 16px;
+  }
+
+  .timeline-content p {
+    font-size: 14px;
+  }
+
+  .timeline-date {
+    position: static;
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    text-align: left;
+  }
 }
