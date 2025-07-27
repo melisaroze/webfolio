@@ -235,7 +235,7 @@ align-content: center;
 #skills {
 	text-align: center;
 	color: #FFFFFF;
-	background: #00030e;
+	background-color: #00030e;
 }
 
 #skills-title {
@@ -390,7 +390,9 @@ align-content: center;
   transition: transform 0.3s ease;
 }
 
-
+#contact-icons {
+  color: white;
+}
 
 
 /*Footer Section*/
