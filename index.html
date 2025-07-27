@@ -15,6 +15,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
 
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
 
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -34,6 +37,7 @@
 						<div class="navbar-nav ms-auto gap-3">
 							<a class="nav-link active text-white hover-text-warning" aria-current="page" href="#">Home</a>
 							<a class="nav-link text-white hover-text-warning" href="#about">About</a>
+							<a class="nav-link text-white hover-text-warning" href="#skills">Skills</a>
 							<a class="nav-link text-white hover-text-warning" href="#projects">Projects</a>
 							<a class="nav-link text-white hover-text-warning" href="#contact">Contact</a>
 							<a class="nav-link text-white hover-text-warning"  href="https://drive.google.com/file/d/1Cr_6aaVW8VuzzWWFbE7K-y1UPKLvpTQ5/view?usp=sharing" target="_blank">CV<span class="material-icons ms-1" style="font-size: 16px; vertical-align: middle;">open_in_new</span></a>
@@ -45,13 +49,13 @@
 
 
 		<!-- Landing Section-->
-		<div class="container-fluid d-flex justify-content-center text-white p-3" id="landing">
+		<div class="container-fluid text-white p-3" id="landing">
 			<div class="row m-5 p-5 align-items-center">
 
 				<div class="col-lg-6">
-					<h5 id="title">Front-End Developer</h5>
+					<h5 id="title">Web Developer</h5>
 					<h1 >Meliza Rose B. Alvarez</h1>
-					<p class="mb-3">I'm an aspiring front-end web developer. I enjoy building websites and applications that are both functional and user-friendly. I’m always learning and excited to turn ideas into real, working projects.</p>
+					<p class="mb-3">I love creating intuitive and visually appealing websites that solve real problems. I’m always eager to learn, improve, and contribute to impactful web projects.</p>
 					<a href="#projects" class="btn " id="cta">See What I Build</a>
 				</div>	
 				<div class="col-lg-6 d-flex justify-content-center">
@@ -63,18 +67,18 @@
 		</div>
 		<!-- End of Landing -->
 
-
 		<!-- About Section -->
 			<div class="container-fluid p-5" id="about">
 				<div class="col-lg-12 col-sm-12 p-5 ">
-				<h2 class="mb-5 fw-bold text-white px-5">About me</h2>
-				<div class="row p-5">
+				<h2 class="mb-5 fw-bold text-white px-5">My Journey</h2>
+				<div class="row p-5 justify-content-center">
 				<div class="timeline">
 					<div class="timeline-item">
 						<span class="timeline-dot" style="background-color: #8e2de2;"></span>
 						<div class="timeline-content">
-							<h5>Full Stack Training at Zuitt Coding Bootcamp</h5>
-							<p>Hands-on projects using Node.js and MySQL</p>
+							<h5>Full-stack Web Development at Zuitt Tech Program</h5>
+							<p>Building web applications using the MERN stack through</p> 
+							<p>hands-on bootcamp training.</p>
 						</div>
 						<span class="timeline-date">2025–present</span>
 					</div>
@@ -94,7 +98,7 @@
 						<span class="timeline-dot" style="background-color: #0575e6;"></span>
 						<div class="timeline-content">
 							<h5>Process Engineer</h5>
-							<p>Technical Documentation</p>
+							<p>Technical Documentation and sustaining AOI machine programs</p>
 						</div>
 						<span class="timeline-date">2024</span>
 					</div>
@@ -128,8 +132,8 @@
 
 
 		<!-- Skills Section -->
-		<div class="container-fluid p-5" id="tools">
-			<h1 class="p-4" id="tools-title">My Skills</h1>
+		<div class="container-fluid p-5" id="skills">
+			<h2 class="p-4" id="skills-title">My Skills</h2>
 			<div class="p-5">
 				<div class="row justify-content-center mb-4">				
 					<div class="col-lg-2 col-md-4 col-sm-4">
@@ -227,8 +231,8 @@
 		<!-- Project Section -->
 		<div class="container-fluid p-3" id="projects">
 			<div class="row text-center gap-3">
-				<div class="col-12" id="projects-title">
-					<h2>My Projects</h2>
+				<div class="col-12" >
+					<h2 id="projects-title">My Projects</h2>
 				</div>
 			</div>
 			<div class="row justify-content-center mb-4">
@@ -481,81 +485,34 @@
 		<div class="container-fluid p-3" id="contact">
 			<div class="row justify-content-center">
 				<div class="col-lg-12 text-center">
-					<h2 class="m-3" id="contact-title">CONTACT</h2>
+					<h2 class="m-3" id="contact-title">CONTACT ME</h2>
+					<p id="contact-caption">Open to development opportunities — let’s build something great together!</p>
 				</div>
 
 				<!-- Contact Form -->
-				<div class="col-md-6 col-lg-6 p-3" id="contact-form">					
-					<form class="px-5">
+				<div class="col-md-6 col-lg-6 p-3">
 
-						<div class="mb-3">
-							<input type="text" class="form-control" placeholder="First Name MI Last name" required autocomplete="">
-						</div>
+					<!-- Link to navbar -->
 
-						<div class="mb-3">
-							<input type="email" class="form-control" placeholder="Email" required autocomplete>
-						</div>
+					<!-- Icons to social media -->
+					<div class="d-flex justify-content-center gap-5">
+						<a href="https://www.linkedin.com/in/meliza-rose-alvarez-5a5a97234/" target="_blank" id="contact-icons"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;" ></i></a>
 
-						<div class="mb-3">
-							<textarea class="form-control" rows="4" placeholder="Message" required autocomplete=""></textarea>
-						</div>
+						<a href="https://github.com/melisaroze" target="_blank" id="contact-icons"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a>
 
-
-						<div class="d-flex justify-content-between align-items-center">
-							<div class="d-flex gap-1">
-								<a href="https://linkedin.com" target="_blank">
-									<i class="fa-brands fa-linkedin fa-2xl" style="color: #ffa500;"></i>
-								</a>
-
-								<a href="https://gitlab.com" target="	_blank">
-									<i class="fa-brands fa-gitlab fa-2xl" style="color: #ffa500;"></i>
-								</a>
-
-								<a href="https://github.com" target="_blank">
-									<i class="fa-brands fa-github fa-2xl" style="color: #ffa500;"></i>
-								</a>
-							</div>
-
-							<div>
-								<button type="button" class="d-flex ms-auto btn btn-submit rounded-pill px-4 justify-content-center w-50" data-bs-toggle="modal"data-bs-target="#submitModal" id="button">Submit</button>
-							</div>
-						</div>	
-					</div>	
-				</form>
+						<a href="mailto:melizabelgica@gmail.com" target="_blank" id="contact-icons"><i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i></a>
+					</div>
+				</div>					
 			</div>
-		</div>			
-		</div>
 		</div>
 		<!-- End of Contact Section -->
 
-		<!-- Submit Modal -->
-		<div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-
-					<!-- Modal Header -->
-					<div class="modal-header">
-						<h5 class="modal-title" id="submitModalLabel">I Got Your Message — Talk Soon!</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<!-- Modal Body -->
-					<div class="modal-body">
-						Looking forward to collaborating with you and creating meaningful digital experiences.
-					</div>
-					<!-- Modal Footer -->
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<!-- Footer -->
 		<footer class = "py-2">
 			<div class="container text-small">
-				<p class="mb-1">Meliza Rose Alvarez</p>
-				<p class="mb-1">Full Stack Web Developer</p>
-				<p class="mb-1">&copy;All Rights Reserved 2025</p>
+				<p class="mb-1">Designed by Meliza Rose Alvarez</p>
+				<p class="mb-0">&copy;All Rights Reserved 2025</p>
 			</div>	
 		</footer>
 		<!-- End of Footer -->

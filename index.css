@@ -2,9 +2,12 @@
 	font-family: Space Grotesk;
 }
 
-html {
-	scroll-behavior: smooth;
+html,body {
+	scroll-behavior: smooth; 
+  margin: 0;
+  padding: 0;
 }
+
 
 nav {
 	font-weight: 400;
@@ -25,6 +28,15 @@ nav a {
 #navbarNav {
 	text-align: center;
 }
+
+.navbar-toggler {
+  border-color: white; /* Optional: makes the button border white */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 
 #landing {
 background:	#00030e;
@@ -70,14 +82,128 @@ align-content: center;
 	transform: scale(1.03);
 }
 
+
+/*About Section*/
+
+
+#about {
+  background: #00030e;
+}
+
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  padding-left: 32px;
+  border-left: 3px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 14px;
+  width: 3px;
+  height: 80%;
+  background: linear-gradient(to bottom,#8e2de2, #0575e6,#00f260);
+  z-index: 0;`
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 30px;
+  z-index: 1;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 2px;
+  left: -22px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-content {
+  color: white;
+}
+
+.timeline-content h5 {
+  font-weight: 600;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.timeline-date {
+  position: absolute  ;
+  top: 0;
+  right: 0;
+  color: #FFFFFF;
+  margin-top: -8px;
+}
+
+
+
+@media screen and (max-width: 540px) {
+
+  #my-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+  .timeline {
+    padding-left: 16px;
+  }
+
+  .timeline::before {
+    position: absolute;
+    left: 8px;
+    height: 65%;
+  }
+
+  .timeline-item {
+    padding-left: 20px;
+    margin-bottom: 24px;
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: -12px;
+  }
+
+  .timeline-content h5 {
+    font-size: 16px;
+  }
+
+  .timeline-content p {
+    font-size: 14px;
+  }
+
+  .timeline-date {
+    position: static;
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    text-align: left;
+  }
+}
+
+
+
+/*Projects Section*/
+
 #projects {
 	background-color: #00030e;
 }
 
 #projects-title {
-	font-weight: 400 !important;
-	font-size: 24px !important;
-	letter-spacing: 2px;
 	color: #f2f2f2;
 	text-decoration: underline;
 }
@@ -103,28 +229,18 @@ align-content: center;
 }
 
 
-#tools {
-	font-weight: 300 !important;
-	font-size: 24px !important;
+
+/*Skills Section*/
+
+#skills {
 	text-align: center;
 	color: #FFFFFF;
 	background: #00030e;
 }
 
-#tools-title {
+#skills-title {
 	font-family: Space Grotesk;
-	font-weight: 400 !important;
-	line-height: 50px;
 	text-decoration: underline;
-	color: #FFFFFF;
-}
-
-#tools h2 {
-	font-family: Space Grotesk;
-	font-weight: 400;
-	font-size: 20px !important;
-	line-height: 100% !important;
-	text-align: center;
 	color: #FFFFFF;
 }
 
@@ -249,179 +365,43 @@ align-content: center;
   margin-bottom: 8px;
 }
 
+
+
+/*Contact Section*/
+
 #contact {
 	background: #00030e;
 }
 
 
 #contact-title {
-	font-weight: 400 !important;
-	font-size: 24px !important;
 	text-decoration: underline;
 	color: #FFFFFF;
 }
 
-#contact-form {
-	padding: 3rem 2rem;
-	background: rgba(255, 255, 255, 0.05);
-	backdrop-filter: blur(30px);
-	-webkit-backdrop-filter: blur(15px);
-	border-radius: 20PX;
-	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+#contact-caption {
+  background: linear-gradient(to right, #00f260, #0575e6, #8e2de2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-#contact-form * {
-  width: 100%;
-
-}
-
-input::placeholder,
-textarea::placeholder {
-  
-  font-family: Space Grotesk;
-  font-weight: 300;  
-  line-height: 100%;
-  vertical-align: middle;
-  color: #FFFFFF;
-}
-
-.form-control {
-	background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: white;
-  border: none;
-}
-
-#button{
-	font-family: Space Grotesk;
-	font-weight: 400;
-	font-size: 14px;
-	letter-spacing: 1.5px;
-	text-align: center;
-	border: 1px solid #FFFFFF;
-	color: #FFFFFF;
-	background: linear-gradient(to right, #00f260, #0575e6, #8e2de2);
-
+#contact-icons:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
 }
 
 
-#button:hover {
-  background-color: #FFFFFF;
-  color: #00030e;
-  border-color: #FFFFFF;
-  box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF 40;
-}
 
+
+/*Footer Section*/
 
 footer {
 	font-family: Space Grotesk;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 16px;
-	line-height: 100%;
 	text-align: center;
 	color: #FFFFFF;
 	background-color: #00030e;
 	border-top: 1px solid white;
 }
 
-
-#about {
-	background: #00030e;
-}
-
-
-.timeline {
-  position: relative;
-  padding-left: 32px;
-  border-left: 3px;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 14px;
-  width: 3px;
-  height: 78%;
-  background: linear-gradient(to bottom,#8e2de2, #0575e6,#00f260);
-  z-index: 0;
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 40px;
-  padding-left: 30px;
-  gap: 8px;
-  z-index: 1;
-}
-
-.timeline-dot {
-  position: absolute;
-  top: 2px;
-  left: -22px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  z-index: 2;
-}
-
-.timeline-content {
-  color: white;
-}
-
-.timeline-content h5 {
-  font-weight: 600;
-}
-
-.timeline-content p {
-  margin: 0;
-  color: #FFFFFF;
-}
-
-.timeline-date {
-  position: absolute	;
-  top: 0;
-  right: 0;
-  color: #FFFFFF;
-  margin-top: -8px;
-}
-
-
-
-@media screen and (max-width: 768px) {
-
-  .timeline {
-    padding-left: 16px;
-  }
-
-  .timeline::before {
-    left: 8px;
-    height: 100%;
-  }
-
-  .timeline-item {
-    padding-left: 20px;
-    margin-bottom: 24px;
-  }
-
-  .timeline-dot {
-    left: -16px;
-  }
-
-  .timeline-content h5 {
-    font-size: 16px;
-  }
-
-  .timeline-content p {
-    font-size: 14px;
-  }
-
-  .timeline-date {
-    position: static;
-    display: block;
-    margin-top: 4px;
-    font-size: 12px;
-    text-align: left;
-  }
-}
