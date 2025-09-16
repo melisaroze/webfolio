@@ -1,8 +1,8 @@
 Webfolio — Meliza Rose B. Alvarez
+
 Personal Portfolio Website
 ---
-Overview
-This is the portfolio website of Meliza Rose B. Alvarez, a web/front‑end developer. It showcases her journey, skills, and projects in a clean, responsive design. This site reflects her capabilities in HTML, CSS, Bootstrap, and frontend UX/UI, as well as her backend knowledge as seen in her other projects.
+This is the portfolio website of Meliza Rose B. Alvarez, a web/front‑end developer. It showcases her journey, skills, and projects in a clean, responsive design. This site reflects her capabilities in HTML, CSS, Bootstrap, and frontend UX/UI, as well as her backend knowledge, as seen in her other projects.
 
 Live Demo
 View the site live: https://melisaroze.github.io/webfolio/
@@ -10,7 +10,7 @@ View the site live: https://melisaroze.github.io/webfolio/
 Features
 •	Responsive Design: Mobile‑first layout, looks good on both desktop and mobile.
 •	Sections:
-  - Home / About — Who Meliza Rose is, her background and journey.
+  - Home / About — Who Meliza Rose is, her background, and journey.
   - Skills — Technical tools and tech stack she uses (Vue, Node.js, MongoDB, Express, Heroku, Git, etc.).
   - Projects — Short previews of selected work (E-Commerce API, Portfolio, UX‑Driven Therapy Tracker, etc.).
   - Contact — Means to reach out, open to new opportunities.
