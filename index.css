@@ -210,34 +210,36 @@ align-content: center;
 
 
 .card {
-	background: #00030e;
-	color: #FFFFFF;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  font-size: 16px;
+  width: 400px;
+  border: 1px solid #5A5A5A;
+  border-radius: 12px;
+  padding: 20px;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.card-title {
-	background: linear-gradient(to right, #00f260, #0575e6, #8e2de2);
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#card-title {
+  background: linear-gradient(to right, #00f260, #0575e6, #8e2de2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;}
 
-.projects-link-title {
-  text-decoration: underline;
-  background: linear-gradient(to right, #00f260, #0575e6, #8e2de2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  }
-
-
-
-.card-text {
-	color: #FFFFFF;
+.card-tools {
+  width: auto;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid #5A5A5A;
+  padding: 4px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  align-items: bottom
 }
-
-.card:hover {
-  transform: scale(1.03);
-  transition: transform 0.3s ease;
-}
-
 
 
 /*Skills Section*/
@@ -252,8 +254,21 @@ align-content: center;
 	font-family: Space Grotesk;
 	text-decoration: underline;
 	color: #FFFFFF;
+  align-items: center;
 }
 
+
+.card-tech {
+  font-size: 20px;
+  width: 550px;
+  border: 1px solid #5A5A5A;
+  border-radius: 12px;
+  padding: 20px;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  align-items: start;
+}
 
 .image-box {
   width: 100px;
@@ -268,8 +283,8 @@ align-content: center;
 }
 
 .logo-icon {
-  width: 60px;
-  height: 60px;
+  width: 20px;
+  height: 20px;
   display: block;
   margin: 0 auto;
 }
